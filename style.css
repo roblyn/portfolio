@@ -1,8 +1,19 @@
+body{
+    margin:0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    background-color: white;
+    font-size: 22px;
+    text-align: center;
+}
 .header {
     height: 100px;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: space-around;
-
+}
+.navbar{
+    display: flex;
+    
 }
