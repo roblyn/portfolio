@@ -6,6 +6,13 @@ body{
     font-size: 22px;
     text-align: center;
 }
+/* .content{
+    display: grid;
+    width: auto;
+    margin: auto;
+    gap: 30px 15px;
+    grid-template: repeat(20, 1fr) / repeat(12, 1fr);
+} */
 .header {
     height: 100px;
     overflow: hidden;
@@ -30,4 +37,103 @@ body{
     display: flex;
     justify-content: space-around;
     list-style: none;
+}
+.grid{
+    display: grid;
+    max-width: 100%;
+    max-height: 3000px;
+    margin: auto;
+    gap: 30px 15px;
+    grid-template: repeat(22,1fr) / repeat(12, 1fr);
+    padding: 30px;
+    line-height: 2em;
+}
+
+.personal-image{ 
+    overflow: hidden;
+    grid-area: 1 / 1 / 5 / 7;
+    object-fit: cover;
+}
+.personal-description{
+    overflow: hidden;
+    grid-area: 1 / 6 / 5 / 13;
+    object-fit: cover;
+    
+}
+.personal-image img{
+   max-width: 100%;
+   max-height: 100%;
+   
+}
+.mtb6000{
+    grid-area: 6 / 1 / 10 / 11;
+    border-bottom: black 4px solid;
+}
+.mtbinfo{
+    overflow: hidden;
+    grid-area: 9 / 1 / 10 / 11 ;
+
+}
+
+.infofont{
+    opacity: 0.8;
+    padding: 4%;
+    font-size: 2em;
+    line-height: 30px;
+    font-weight: 500;
+    color: white;
+    background-color: #5a5a55;
+  
+}
+.mtb6000 img{
+    max-height: 100%;
+    max-width: 100%;
+    
+}
+.teacozy{
+    grid-area: 10 / 3 / 14 / 13;
+    border-bottom: black 4px solid;
+   
+}
+.teacozy img{
+    max-height: 100%;
+    max-width: 100%;
+    
+}
+.tea-info{
+   
+    grid-area: 13 / 3 / 14 / 13 ;
+    
+  
+}
+.regalos-hygge{
+    
+    grid-area: 15 / 1 / 19 / 10;
+    border-bottom: black 4px solid;
+   
+}
+.regalos-hygge img {
+    max-height: 100%;
+    max-width: 100%;
+  
+}
+.regaloshygge-info {
+    grid-area: 18 / 1 / 19 / 10 ;
+   
+}
+
+.contact{
+    display: none;
+}
+.skills{
+    grid-area:19/1/22/13 ;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+
+}
+.javascript img,.html img,.css img{
+    max-width: 100%;
+    max-height: 100%;
+
 }
