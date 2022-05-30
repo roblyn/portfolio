@@ -7,33 +7,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/10701338af.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
     <title>Portfolio</title>
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="top">
         <h1 class="title">Robinson Lynggaard</h1>
         <nav class="navbar">
 
             <ul>
 
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
 
             </ul>
         </nav>
 
         <nav class="mobile-navbar">
-            <button class="btn-menu"><i class="fa fa-bars"></i></button>
+
+            <button class="btn-menu" onclick="navbar()"><i class="fa fa-bars"></i></button>
             <div id="dropdown" class="dropdown-list">
+
                 <ul>
 
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -42,7 +46,7 @@
     <main class="content grid">
         <!-- About Section -->
 
-        <article class="personal-image ">
+        <article class="personal-image" id="about">
             <img src="img/Personal.jpg" alt="Robinson Lynggaard">
         </article>
         <article class="personal-description">
@@ -54,71 +58,82 @@
 
         <!-- Projects Section -->
 
-        <article class="mtb6000">
+        <article class="mtb6000" id="projects">
             <img src="img\MTB6000.png" alt="MTB600">
 
         </article>
-        <span class="mtbinfo infofont">Web Design and Coding</span>
+        <span id="infofont" class="mtbinfo">Web Design and Coding</span>
         <article class="teacozy">
             <img src="img\teacozy.png" alt="Teacozy">
 
         </article>
-        <span class="tea-info infofont">Web Design and Coding</span>
-        <article class="regalos-hygge ">
+        <span id="infofont" class="tea-info ">Web Design and Coding</span>
+        <article class="regalos-hygge " onmouseenter="mousein()" onmouseout="mouseout()">
             <img src="img\Regaloshygge.png" alt="Regalos hygge">
 
         </article>
-        <span class="regaloshygge-info infofont">Web Design and Coding</span>
+        <span id="infofont" class="regaloshygge-info infofont">Web Design and Coding</span>
         <!-- Skills Section -->
 
-        <section class="skills">
-            <ul>
-                <li class="javascript">
-                    <img src="img/javascript.png" alt="">
-                </li>
-                <li class="html">
-                    <img src="img/html.png" alt="">
-                </li>
-                <li class="css">
-                    <img src="img/css.png" alt="">
-                </li>
-            </ul>
+        <section class="skills" id="skills">
+            <article class="javascript">
+                <img src="img/javascript.png" alt="">
+            </article>
+            <article class="html">
+                <img src="img/html.png" alt="">
+            </article>
+
+
+            <article class="css">
+                <img src="img/css.png" alt="">
+            </article>
 
         </section>
-        <!-- Contact Section -->
+        
+        <section id="contact" class="contact">
 
-        <h2 class="contact-title">Contact</h2>
-        <form action="" method="get" class="contact-form">
-            <input type="email" id="email" size="30" placeholder="Enter your email*" required>
-            <input type="Name" id="name" size="30" placeholder="Enter your Name*" required>
-            <input type="lastname" id="lastname" size="30" placeholder="Enter your lastname">
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="Please leave a message here!"
-                required></textarea>
-            <input type="submit" Value="Send">
-        </form>
-        <article class="social-media">
-            <ul>
-                <li><img src="img/LinkedIn.png" alt=""></li>
-                <li><img src="img/GitHub.png" alt=""></li>
-            </ul>
-        </article>
+           
+            <!-- <article class="contact-title">
+               
+            </article> -->
+            <article class="contact-form">
+                <form action="" method="get" class="form-input">
+                    <input type="email" id="email" size="30" placeholder="Enter your email*" required>
+                    <input type="Name" id="name" size="30" placeholder="Enter your Name*" required>
+                    <input type="lastname" id="lastname" size="30" placeholder="Enter your lastname">
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Please leave a message here!"
+                        required></textarea>
+                    <input type="submit" Value="Send">
+                </form>
+            </article>
+
+            <article class="social-media">
+
+                <a href="https://www.linkedin.com/feed/" target="_blank" ><img src="img/LinkedIn.png" alt=""></a>
+                <a href="https://github.com/roblyn" target="_blank" ><img src="img/GitHub.png" alt=""></a>
+
+            </article>  
+            
+        </section>
 <footer class="contact-info">
-        <ul>
-            <li>
-                <p>Email: anrobmari@gmail.com</p>
-            </li>
-            <li>
-                <p>Phone: 52390595</p>
-            </li>
-            <li>
-                <p>Kolding | Denmark</p>
-            </li>
-        </ul>
-    </footer>
+            <ul>
+                <li>
+                    <p>Email: anrobmari@gmail.com</p>
+                </li>
+                <li>
+                    <p>Phone: 52390595</p>
+                </li>
+                <li>
+                    <p>Kolding | Denmark</p>
+                </li>
+            </ul>
 
+
+        </footer>
+      
     </main>
 
-    
+
 
 </body>
 
